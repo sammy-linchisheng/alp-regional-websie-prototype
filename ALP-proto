@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALP | Asia's Leading Smart Logistics Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --alp-white: #FFFFFF;
+            --alp-black: #111111;
+            --alp-yellow: #FFD700; /* ALP Yellow accent */
+            --alp-gray: #F5F5F7;
+        }
+        body {
+            font-family: 'Jost', sans-serif;
+            background-color: var(--alp-white);
+            color: var(--alp-black);
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 100%);
+        }
+        .market-card:hover .market-overlay {
+            opacity: 1;
+        }
+        .btn-primary {
+            background-color: var(--alp-yellow);
+            color: var(--alp-black);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--alp-black);
+            color: var(--alp-yellow);
+            transform: translateY(-2px);
+        }
+        .section-dark {
+            background-color: var(--alp-black);
+            color: var(--alp-white);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+                <!-- Placeholder for ALP Logo -->
+                <span class="text-2xl font-bold tracking-tighter">ALP<span class="text-yellow-500">.</span></span>
+            </div>
+            <div class="hidden md:flex space-x-10 text-sm font-medium tracking-wide uppercase">
+                <a href="#omega" class="hover:text-yellow-600 transition">OMEGA Solution</a>
+                <a href="#markets" class="hover:text-yellow-600 transition">Markets</a>
+                <a href="#sectors" class="hover:text-yellow-600 transition">Sectors</a>
+                <a href="#about" class="hover:text-yellow-600 transition">About</a>
+            </div>
+            <div>
+                <a href="#contact" class="btn-primary px-6 py-2.5 rounded-full text-sm font-bold shadow-sm">
+                    ENQUIRE NOW
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-200">
+        <!-- Mock Video/Image Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Logistics Infrastructure">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+                Empowering Asia's <br><span class="text-yellow-400">Smart Logistics</span> Future.
+            </h1>
+            <p class="text-lg md:text-xl mb-10 font-light opacity-90 max-w-2xl mx-auto leading-relaxed">
+                ALP integrates Real Estate, Automation, and IT to provide one-stop Smart Logistics Infrastructure across Malaysia, Thailand, Singapore, and beyond.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#omega" class="btn-primary px-10 py-4 rounded-full text-lg font-bold w-full md:w-auto">Discover OMEGA</a>
+                <a href="#markets" class="bg-white/10 backdrop-blur-md border border-white/30 px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition w-full md:w-auto">Our Footprint</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- OMEGA Solution (Objective: Leasing/Credibility) -->
+    <section id="omega" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-sm font-bold text-yellow-500 uppercase tracking-widest mb-4">The Solution</h2>
+                <h3 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">OMEGA: Smart Logistics Infrastructure as a Service.</h3>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    OMEGA features an integrated Automated Storage and Retrieval System (AS/RS), enabling multiple supply chains to co-locate, leveraging digital networks to enhance efficiency and eliminate redundancies.
+                </p>
+                <ul class="space-y-6">
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-lg mr-4"><svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg></div>
+                        <div>
+                            <h4 class="font-bold">Plug-and-Play Automation</h4>
+                            <p class="text-sm text-gray-500">No heavy upfront CAPEX. Switch to OPEX-based automation model.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-lg mr-4"><svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg></div>
+                        <div>
+                            <h4 class="font-bold">Powered by ALPOS</h4>
+                            <p class="text-sm text-gray-500">Seamlessly integrate your WMS with our brain-like IT platform.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-lg mr-4"><svg class="w-5 h-5 text-yellow-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg></div>
+                        <div>
+                            <h4 class="font-bold">Future Scalability</h4>
+                            <p class="text-sm text-gray-500">Pay-as-you-use pallet plans that grow with your business.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=1200" alt="OMEGA Infrastructure" class="w-full">
+                <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur px-6 py-4 rounded-xl flex justify-between items-center border border-gray-100">
+                    <div>
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Efficiency Boost</p>
+                        <p class="text-lg font-bold">Up to 3x Faster Handling</p>
+                    </div>
+                    <div class="h-10 w-1px bg-gray-200"></div>
+                    <div class="text-right">
+                        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Sustainability</p>
+                        <p class="text-lg font-bold">LEED Gold Target</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets Grid (Objective: Market Presence) -->
+    <section id="markets" class="py-24 section-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-sm font-bold text-yellow-500 uppercase tracking-widest mb-4">Our Footprint</h2>
+                <h3 class="text-4xl md:text-5xl font-bold">Expanding Networks Across Asia.</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Malaysia -->
+                <div class="group relative h-[500px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc18a594?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Malaysia">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-yellow-400 font-bold text-sm mb-2 block">Available Now</span>
+                        <h4 class="text-2xl font-bold mb-2">MALAYSIA</h4>
+                        <p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity">OMEGA 1 Bukit Raja: 100,000+ Pallet Positions.</p>
+                    </div>
+                </div>
+                <!-- Thailand -->
+                <div class="group relative h-[500px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1528181304800-2f1408198f29?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Thailand">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-white/50 font-bold text-sm mb-2 block">Coming Q2 2026</span>
+                        <h4 class="text-2xl font-bold mb-2">THAILAND</h4>
+                        <p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity">OMEGA 1 Bang Na: 155,000+ Pallet Positions.</p>
+                    </div>
+                </div>
+                <!-- Singapore -->
+                <div class="group relative h-[500px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1525625230556-8e8bdbaae1f6?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Singapore">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-white/50 font-bold text-sm mb-2 block">Coming Q2 2028</span>
+                        <h4 class="text-2xl font-bold mb-2">SINGAPORE</h4>
+                        <p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity">OMEGA 1 Singapore: High-tech 3PL Hub.</p>
+                    </div>
+                </div>
+                <!-- Japan -->
+                <div class="group relative h-[500px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=800" class="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" alt="Japan">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <span class="text-white/50 font-bold text-sm mb-2 block">Strategy Pipeline</span>
+                        <h4 class="text-2xl font-bold mb-2">JAPAN</h4>
+                        <p class="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity">Scaling smart solutions to the Japanese market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors (Objective: Leasing Expertise) -->
+    <section id="sectors" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold mb-4 tracking-tight">Tailored for Every Industry.</h3>
+                <p class="text-gray-500">From FMCG to Semiconductor, we understand your unique pain points.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">📦</div>
+                    <p class="font-bold text-sm">FMCG</p>
+                </div>
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">❄️</div>
+                    <p class="font-bold text-sm">Cold Chain</p>
+                </div>
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">💊</div>
+                    <p class="font-bold text-sm">Pharma</p>
+                </div>
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">💻</div>
+                    <p class="font-bold text-sm">Electronics</p>
+                </div>
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">🛒</div>
+                    <p class="font-bold text-sm">E-commerce</p>
+                </div>
+                <div class="flex flex-col items-center p-6 border border-gray-100 rounded-2xl hover:shadow-xl transition">
+                    <div class="w-12 h-12 mb-4 bg-gray-50 rounded-full flex items-center justify-center">🔬</div>
+                    <p class="font-bold text-sm">High-Tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Generation Form (Primary Objective) -->
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white rounded-[40px] shadow-2xl p-10 md:p-16">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Start Your Scaling Journey.</h2>
+                    <p class="text-gray-500">Leave your details and our BD team in the respective region will reach out within 24 hours.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="px-6 py-4 bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Company Email</label>
+                            <input type="email" placeholder="john@company.com" class="px-6 py-4 bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Target Market</label>
+                            <select class="px-6 py-4 bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 transition appearance-none">
+                                <option>Malaysia (MY)</option>
+                                <option>Thailand (TH)</option>
+                                <option>Singapore (SG)</option>
+                                <option>Japan (JP)</option>
+                                <option>Taiwan (TW)</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Industry</label>
+                            <input type="text" placeholder="e.g. Retail, Pharma" class="px-6 py-4 bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-xs font-bold uppercase tracking-widest text-gray-400">Message / Requirements</label>
+                        <textarea rows="4" placeholder="Tell us about your storage or automation needs..." class="px-6 py-4 bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary py-5 rounded-xl font-bold text-lg shadow-lg">SEND ENQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-20 px-6 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-10 md:mb-0">
+                <span class="text-3xl font-bold tracking-tighter">ALP<span class="text-yellow-500">.</span></span>
+                <p class="text-sm text-gray-400 mt-4">© 2026 Ally Logistic Property. All Rights Reserved.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Global Offices</h5>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>Taipei (HQ)</li>
+                        <li>Kuala Lumpur</li>
+                        <li>Bangkok</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Solutions</h5>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>OMEGA</li>
+                        <li>Built-to-Suit</li>
+                        <li>ALPOS IT Platform</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest">Connect</h5>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>LinkedIn</li>
+                        <li>Media Room</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
